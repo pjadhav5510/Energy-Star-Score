@@ -43,18 +43,18 @@ For the gradient boosting regressor, we tuned in six different hyperparameters. 
 ''')
 
 st.text('')
-st.image('Homepage/Images/Screenshot 2024-04-28 204621.png')
+st.image('Images/Screenshot 2024-04-28 204621.png')
 st.text('')
 
 st.write('''We used the outcomes of the random search to inform a grid search by creating a grid with hyperparameters close to those that performed best during the random search. However, we focus on a single choice rather than evaluating all of these alternatives again: the total number of trees in the forest (n_estimators). The impact of altering a solitary hyperparameter on performance is immediately apparent. We expected that the number of trees would significantly affect the underfitting to overfitting ratio.
 
 Grid search was used in this instance, with a grid containing only the hyperparameter [n_estimators]. ''')
 
-st.image('Homepage/Images/Picture9.png')
+st.image('Images/Picture9.png')
 
 st.subheader('Checking for training and testing error', divider='red')
 st.text('')
-st.image('Homepage/Images/Picture10.png')
+st.image('Images/Picture10.png')
 
 st.text('')
 st.write('''The findings clearly show that our model was overfitting! The training error is significantly smaller than the testing error, indicating that although the model learned the training data quite well, it was not able to generalize to the test data as well. Thus, as the number of trees increases, so does the degree of overfitting. Both the test and training errors decrease with the number of trees, but the training error drops faster.''')
@@ -80,7 +80,7 @@ st.write('''Although it takes a lot longer to run (approximately 12 times slower
          
 To get a sense of the predictions, we can plot the distribution of true values on the test set and the predicted values on the test set.''')
 
-st.image('Homepage/Images/Download.png')
+st.image('Images/Download.png')
 
 st.text('')
 
@@ -88,7 +88,7 @@ st.write('''Despite the projected values' density being closer to the test value
 
 A residuals histogram is another diagnostic plot. The residuals should ideally be regularly distributed, which would indicate that the model is incorrect in both high and low values by the same amount.''')
 
-st.image('Homepage/Images/download (1).png')
+st.image('Images/download (1).png')
 st.text('')
 st.write('The residuals are close to normally disributed, with a few noticeable outliers on the low end. These indicate errors where the model estimate was far below that of the true value.')
 
