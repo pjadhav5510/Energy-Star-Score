@@ -53,4 +53,4 @@ st.write('''The two most significant characteristics are, by a significant margi
 
 For a visual comparison, let's graph the feature importances.''')
 
-st.image('Homepage/Images/download (2).png')
+st.image('Images/download (2).png')
