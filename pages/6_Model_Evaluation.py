@@ -42,7 +42,7 @@ st.write('4. Gradient Boosting Regression')
 st.write('5. K-Nearest Neighbors Regression')
 st.text('')
 
-st.image('Homepage/Images/Picture8.png')
+st.image('Images/Picture8.png')
 
 
 st.subheader('Results', divider='red')
@@ -60,11 +60,11 @@ K-Nearest Neighbors Regression: MAE = 14.0863
 
 st.subheader('MAE score comparison', divider = 'red')
 
-st.image('Homepage/Images/mae.png')
+st.image('Images/mae.png')
 
 
 st.subheader('R2 score comparison', divider = 'red')
 
-st.image('Homepage/Images/r2.png')
+st.image('Images/r2.png')
 
 st.write('''The random forest performed better than the gradient-boosting regressor in terms of MAE score, although both are almost similar when it comes to R2 score, Given that we primarily used the default hyperparameters, We must acknowledge that this is not the most equitable comparison. The performance is greatly impacted by the hyperparameters, particularly when using the Support Vector Regressor. Because performance is less dependent on model settings, the random forest and gradient boosting methods are excellent for beginners. Still, given that every model performs noticeably better than the baseline, we can draw the conclusion that machine learning is useful from these results.''')
