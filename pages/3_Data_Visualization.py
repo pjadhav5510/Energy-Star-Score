@@ -60,7 +60,7 @@ with st.container():
         st.text('')
         st.write('The borough of the building does not seem to make as significant a difference in the distribution of the score as does the building type.')
 
-st.image('Homepage/Images/parisplot.png',use_column_width ='always')
+st.image('Images/parisplot.png',use_column_width ='always')
 st.text('')
 st.write('')
     
