@@ -36,9 +36,9 @@ st.write('''In this project, the feature engineering procedures that follow were
 3. Give the category variables a code.
 ''')
 st.text('')
-st.image('Homepage/Images/Picture4.png')
+st.image('Images/Picture4.png')
 
 #st.subheader('Handling missing values', divider='red')
 st.write('''One column represents the score, and there were 109 unique features in the observations (buildings). Because of their high correlation, several of these features are repeated, and not all of them are probably important for score prediction. We thus eliminated such observations.''')
-st.image('Homepage/Images/Picture5.png')
+st.image('Images/Picture5.png')
 st.write('''Our final dataset has 64 features (one of the columns is the target). Because the categorical variables are only one-hot encoded, this is still a considerable quantity. Furthermore, models like random forests perform implicit feature selection, which is the automatic selection of characteristics that are relevant during training, while models like linear regression may have problems with a large number of features. We will keep all of the features for the time being and keep an eye on the model's performance, even if there are still phases in the feature selection process.''')
