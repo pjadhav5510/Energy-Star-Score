@@ -35,12 +35,12 @@ col3, col4 = st.columns(2)
 with st.container():
     with col1:
         #st.text('')
-        st.image('Homepage/Images/scores.png')
+        st.image('Images/scores.png')
         st.text('')
         st.write('Our first plot has already revealed some surprising (and suspicious) information! As the Energy Star Score is a percentile rank, we would expect to see a completely flat distribution with each score making up 1% of the distribution (about 90 buildings).')
 
     with col2:
-        st.image('Homepage/Images/EUI.png')
+        st.image('Images/EUI.png')
         st.text('')
         st.write('This plot looks a little less suspicious and is close to normally distributed with a long tail on the right side (it has a positive skew).')
 
@@ -49,14 +49,14 @@ with st.container():
     with col3:
         st.text('')
 
-        st.image('Homepage/Images/density.png')
+        st.image('Images/density.png')
         st.text('')
         st.write('From this graph, we can see that the building type does have an effect on the score (the negative scores on the graph are an artifact of the kernel density estimation procedure).')
 
 
     with col4:
         st.text('')
-        st.image('Homepage/Images/density_borough.png')
+        st.image('Images/density_borough.png')
         st.text('')
         st.write('The borough of the building does not seem to make as significant a difference in the distribution of the score as does the building type.')
 
