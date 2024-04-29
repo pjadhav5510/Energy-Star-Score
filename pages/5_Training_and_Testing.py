@@ -43,6 +43,6 @@ st.write('''For training and testing our model we implemented two standard ML ap
 2. Classification: Using Energy Star Score intervals of 20 points, divide the buildings into 5 groups. Ascertain the class of a structure. 
 • Metrics: Confusion matrix, accuracy, and f1_score (the harmonic mean of precision and recall).
 ''')
-st.image('Homepage/Images/Picture6.png')
-st.image('Homepage/Images/Picture7.png')
+st.image('Images/Picture6.png')
+st.image('Images/Picture7.png')
 st.write('In the training set, there were 6622 buildings with a score, 2839 buildings with a score in the testing set, and 1858 buildings with no score. ')
