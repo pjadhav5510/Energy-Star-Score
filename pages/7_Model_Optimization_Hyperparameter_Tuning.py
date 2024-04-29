@@ -80,7 +80,7 @@ st.write('''Although it takes a lot longer to run (approximately 12 times slower
          
 To get a sense of the predictions, we can plot the distribution of true values on the test set and the predicted values on the test set.''')
 
-st.image('Images/Download.png')
+st.image('Images/download.png')
 
 st.text('')
 
