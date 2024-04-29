@@ -26,7 +26,7 @@ set_bg_hack_url()
 # side_bg = 'Homepage/Images/density.png'
 # sidebar_bg(side_bg)
 
-df = pd.read_csv('Downloads/Energy_and_Water_Data_Disclosure_for_Local_Law_84_2017__Data_for_Calendar_Year_2016_.csv')
+df = pd.read_csv('Data/Energy_and_Water_Data_Disclosure_for_Local_Law_84_2017__Data_for_Calendar_Year_2016_.csv')
 
 st.header('Overview of Data', divider='red')
 st.text('')
