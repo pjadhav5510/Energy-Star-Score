@@ -40,10 +40,10 @@ st.text('')
 st.subheader('Convert Data to appropriate format', divider='red')
 st.text('')
 st.write('''We may convert the "Not Available" items in the numerical columns to numeric data types by replacing them with np.nan, which can be thought of as floats. From the columns that include numerical values (such square footage or energy use), we will next generate numeric datatypes.''')
-st.image('Images/picture1.png')
+st.image('Images/Picture1.png')
 
 st.subheader('Handling missing values', divider='red')
 st.write('''After acquiring the precise column datatypes, we carry out the analysis by looking at each column's percentage of missing values. 
 This function calculates the percentage of missing data and the number of missing values for each column. ''')
-st.image('Images/picture3.png')
+st.image('Images/Picture3.png')
 st.write('We also delt with missing data in columns, we removed 11 columns which had missing data in it.')
