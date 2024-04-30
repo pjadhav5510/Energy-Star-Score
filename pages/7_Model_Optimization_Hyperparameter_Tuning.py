@@ -63,12 +63,11 @@ st.write('''We tried to reduce overfitting by getting more training data or by s
 
 st.subheader('Final Model', divider='red')
 
+st.write('''Out the of models, we selected tree-based gradient boosting model to tune its hyperparameter. 
 
+We observed the following optimized results:''')
 
-code = '''Out the of models, we selected tree-based gradient boosting model to tune its hyperparameter. 
-
-We observed the following optimized results:
-
+code = '''
 GDR Model performance on the test set: MAE = 11.0164
 
 Tunned GDR model performance on the test set:   MAE = 9.0446.
