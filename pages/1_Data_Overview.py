@@ -31,7 +31,7 @@ df = pd.read_csv('Data/Energy_and_Water_Data_Disclosure_for_Local_Law_84_2017__D
 st.header('Overview of Data', divider='red')
 st.text('')
 st.write('This data set includes information reported to the City by August 1, 2016 for calendar year 2015 energy and water consumption data and data from the 2016 Covered Buildings List. Metrics are calculated by the Environmental Protection Agency’s tool ENERGY STAR Portfolio Manager, and data is self-reporting by building owners. The public availability of data allows for local and national comparison of a buildings’ performance, incentivizes the most accurate benchmarking of energy usage, and informs energy management decisions.')
-st.write('We collected data from a range of sources, including publicly available government documents, GitHub, Kaggle, and more. The "New York City Government Building Energy Benchmarking Results: 2019" provided useful data regarding NYC buildings' energy efficiency. ')
+st.write('''We collected data from a range of sources, including publicly available government documents, GitHub, Kaggle, and more. The "New York City Government Building Energy Benchmarking Results: 2019" provided useful data regarding NYC buildings' energy efficiency. ''')
 st.text('')
 st.subheader('Dataset',divider='red')
 st.text('')
