@@ -14,7 +14,7 @@ def set_bg_hack_url():
          f"""
          <style>
          .stApp {{
-             background: url("https://static.thenounproject.com/png/3681378-200.png");
+             background: url("https://static.thenounproject.com/png/3216386-200.png");
              background-size: cover
          }}
          </style>
