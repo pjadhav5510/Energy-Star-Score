@@ -51,7 +51,7 @@ st.write('We also delt with missing data in columns, we removed 11 columns which
 st.subheader('Handling outliers', divider='red')
 st.write('''To evaluate this subjective statistic, we looked to Energy Use Intensity (EUI), which is calculated by dividing the overall energy use by the structure's square footage. As EUI is not self-reported, it offers a more objective measurement of energy efficiency. Unlike the percentile-based Energy Star Score, the absolute values of the EUI should essentially follow a normal distribution, possibly with outliers at extreme ends. ''')
 st.text('')
-st.image('Images/EUI_with_outliers.png')
+st.image('Images/EUI_with_outliers.png', width=200)
 st.text('')
 st.write('''We analysed the site EUI unit and noticed we have another problem which is outliers.
 We removed outliers by using the interquartile range method:''')
