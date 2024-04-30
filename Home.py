@@ -24,4 +24,7 @@ st.write('Using the 1–100 ENERGY STAR score, you can understand how your build
 st.text('')
 st.write('It’s a simple but powerful tool. Based on actual, measured data, the ENERGY STAR score assesses how your building is performing as a whole, taking into account its physical attributes, its operations, and how the people inside use it. Are you open 24 hours? Do you have a high density of workers? The ENERGY STAR score is tailored to account for how your building works in the real world.')
 
-
+st.subheader('Video', divider='red')
+st.text('')
+VIDEO_URL = "https://www.youtube.com/watch?v=OmcJYZn3R_M"
+st.video(VIDEO_URL)
