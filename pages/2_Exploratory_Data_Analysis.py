@@ -48,6 +48,29 @@ This function calculates the percentage of missing data and the number of missin
 st.image('Images/Picture3.png')
 st.write('We also delt with missing data in columns, we removed 11 columns which had missing data in it.')
 
+st.subheader('Handling outliers', divider='red')
+st.write('''To evaluate this subjective statistic, we looked to Energy Use Intensity (EUI), which is calculated by dividing the overall energy use by the structure's square footage. As EUI is not self-reported, it offers a more objective measurement of energy efficiency. Unlike the percentile-based Energy Star Score, the absolute values of the EUI should essentially follow a normal distribution, possibly with outliers at extreme ends. ''')
+st.write('''We analysed the site EUI unit and noticed we have another problem which is outliers.
+We removed outliers by using the interquartile range method:''')
+
+code = '''
+    # Calculate first and third quartile 
+    first_quartile = data['Site EUI (kBtu/ft2)'].describe()['25%"] 
+    third_quartile = data['Site EUI (kBtu/ft?)'].describe()['75%']
+
+    # Interquartile range 
+    iqr = third_quartile - first_quartile
+
+    # Remove outliers 
+    data = data[(data['Site EUI (kBtu/ft2)'] > (first_quartile - 3 * iqr)) & (data['Site EUI (kBtu/ft2)'] < (third_quartile + 3 * iqr))]
+'''
+
+st.code(code, language='python')
+
+st.write('''The below picture in data visualization, which has a long tail on the right after the outliers are eliminated, is almost normally distributed and seems less suspicious (it has a positive skew). Our goal is to estimate the Energy Star Score even though this metric might be more objective. Even if the score was not a good predictor, we nonetheless made an effort to do so.''')
+
+
+
 st.header(':blue[Data Visualizations]', divider='red')
 
 col1, col2 = st.columns(2)
