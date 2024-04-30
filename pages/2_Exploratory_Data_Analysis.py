@@ -55,7 +55,7 @@ We removed outliers by using the interquartile range method:''')
 
 code = '''
     # Calculate first and third quartile 
-    first_quartile = data['Site EUI (kBtu/ft2)'].describe()['25%"] 
+    first_quartile = data['Site EUI (kBtu/ft2)'].describe()['25%'] 
     third_quartile = data['Site EUI (kBtu/ft?)'].describe()['75%']
 
     # Interquartile range 
